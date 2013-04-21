@@ -1,0 +1,10 @@
+ <% if current_user == product.user %>
+ <tr>
+ <td><%= link_to (image_tag product.image(:medium)), product %></td>
+   
+        <td><%= product.description %></td>
+        <td><%= link_to product.user.name, product.user %></td>
+        <td><%= link_to 'Edit', edit_product_path(product) %><br><%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td></td>
+        <% end %>
+    </tr>
