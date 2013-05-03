@@ -3,15 +3,29 @@
 <div class="well">
 	<%= image_tag @product.image %>
 	<p>
- 		 <%= @product.description %>
+ 		 <strong>Product name:</strong> <%= @product.description %>
 	</p>
 	<p>
- 		 <%= @product.user.name %>
+ 		 <strong>Brand:</strong> <%= @product.brand %>
+	</p>
+	<p>
+ 		 <strong>Regular price:</strong> <%= @product.price %>
+	</p>
+	<p>
+ 		 <strong>Sale price:</strong> <%= @product.sale_price %>
+	</p>
+
+	<p>
+ 		 <strong>Material:</strong> <%= @product.material %>
+	</p>
+
+	<p>
+	 <strong> <%= @product.user.name %> </strong>
 	</p>
 	<% if current_user == @product.user %>
-		<%= link_to 'Edit', edit_product_path(@product) %> |
+		<%= link_to 'Edit product', edit_product_path(@product), class: "btn" %> 
 	<% end %>
-	<%= link_to 'Back', products_path %>
+	<%= link_to 'Back', products_path, class: "btn" %>
 	</div>
 </div>
 </div>
