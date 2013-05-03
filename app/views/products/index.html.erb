@@ -1,5 +1,5 @@
 <h1>Your Products</h1> 
-<%= link_to 'Add Product', new_product_path, class: "btn btn-primary" %>
+<%= link_to 'Add Product', new_product_path, class: "btn btn-danger" %>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -19,4 +19,6 @@
 
     <br />
 
-    <%= link_to 'Add Product', new_product_path, class: "btn btn-primary" %>
+    <%= link_to 'Add Product', new_product_path, class: "btn btn-danger" %>
+
+<%= will_paginate @products %>

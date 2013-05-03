@@ -5,7 +5,7 @@ class ProductsController < ApplicationController
   # GET /products.json
   helper_method :sort_column, :sort_direction
   def index
-    @products = Product.order(sort_column + ' ' + sort_direction)
+    @products = Product.order(sort_column + ' ' + sort_direction).page(params[:page]).per_page(20)
 
     respond_to do |format|
       format.html # index.html.erb

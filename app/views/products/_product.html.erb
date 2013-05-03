@@ -6,7 +6,7 @@
           <td><%= product.brand %></td>
         <td><%= product.sale_price %></td>
         <td><%= link_to product.user.name, product.user %></td>
-        <td><%= link_to 'View', product_path(product), class: "btn btn-small" %><%= link_to 'Edit', edit_product_path(product), class: "btn btn-small" %><br><%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-small btn-danger" %></td>
+        <td><%= link_to 'Edit', edit_product_path(product), class: "btn btn-small" %><br><%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-small" %></td>
         <td></td>
         <% end %>
     </tr>

@@ -8,15 +8,18 @@ $navbarBackground: white;
 @import 'bootstrap';
 
 body {
-	padding-top: 60px;
+	padding-top: 80px;
 }
 
 @import 'bootstrap-responsive';
 
 .navbar-inner {
+	min-height: px;
 	@include box-shadow(none !important);
-	border: 0;
-}
+	border: 5px solid #D6222B;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px} 
 
 .footer {
 	margin-top: 50px;
@@ -24,6 +27,11 @@ body {
 	a {
 		color: $gray;
 	}
+}
+
+.nav li {
+	font-size: 16px;
+	line-height: 45px;
 }
 /* Required for jQuery Masonry */
 

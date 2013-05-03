@@ -22,3 +22,6 @@ doc/
 
 # Ignore Paperclim Uploaded files
 /public/system
+
+# Ignore sampleimages
+/sampleimages
